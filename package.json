@@ -1,0 +1,19 @@
+{
+  "name": "creator-commerce-provider-routing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/storefront_service.ts",
+    "configure": "node --experimental-strip-types src/configure_provider.ts",
+    "test": "node --experimental-strip-types --test test/provider_routing.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
